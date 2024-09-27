@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Yemek Tarifleri</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dünya Yemekleri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Yöresel Yemekler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tatlılar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">İçecekler</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container">
+      <div class="container">
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <div>
+                    <img src="https://lezzetlikareler.com/images/gorseller/hamburger-fotograf-cekimi.jpg" height="900rem" alt="">
+                </div>
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <div>
+                    <img src="https://www.shdyapim.com/wp-content/uploads/2016/06/yemek4.jpg" height="900rem" alt="">
+                </div>
+                <div class="container">
+                  <div class="carousel-caption">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div>
+                    <img src="https://images.squarespace-cdn.com/content/v1/564845d3e4b03c7db181bd8a/1594219557361-V78EVIVCK27IOLQL5KBM/yemek-fotograf-cekimi.jpg" height="900rem" alt="">
+                </div>
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Accordion -->
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingWorld">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Dünya Mutfağı
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">İtalyan mutfağı, Fransız mutfağı, Kore mutfağı, Orta Doğu mutfağı ya da Meksika yemekleri gibi çeşitli dünya mutfağı yemek tarifleri için okumaya devam edin! Farklı kültürlerden kopup gelen tariflerimizi deneyerek hem kendiniz hem de misafirleriniz etkileyici bir sofradan nasibini alabilir. Hangi ülkenin nesi meşhur, öğrenmeye başlayalım!</div>
+            <!-- Dünya mutfağı yemekleri -->
+             <div class="container">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Ballı Susamlı Tavuk (Çin Usulü)
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <img src="https://osmancikhabercomtr.teimg.com/osmancikhaber-com-tr/uploads/2023/09/ballitavuk.jpg" alt="ballı-susamlı-tavuk">
+                        <hr>
+                        <strong>Ballı Susamlı Tavuk İçin Malzemeler</strong>
+                        <ul>
+                          <li>600 gram kalçalı but (Kemiklerinden ayrılmış)</li>
+                          <li>2 yumurta akı</li>
+                          <li>2 silme yemek kaşığı mısır nişastası</li>
+                          <li>Karabiber</li>
+                          <li>4 yemek kaşığı soya sosu</li>
+                          <li>2 yemek kaşığı dolu dolu susam</li>
+                          <li>1 yemek kaşığı ketçap</li>
+                          <li>2 yemek kaşığı bal</li>
+                          <li>3-4 diş rendelenmiş sarımsak</li>
+                          <li>4-5 yemek kaşığı sıvı yağ</li>
+                        </ul>
+                        <hr>
+                        <strong>Ballı Susamlı Tavuk Yapılışı</strong>
+                        <ol>
+                          <li>Tavuklar jülyen ya da küp, doğranır.</li>
+                          <li>Derin bir kapta yumurta akı, nişasta ve karabiber iyice çırpılır, içine tavuklar atılır. Yarım saat bu şekilde dinlendirilir.</li>
+                          <li>Sıvıyağ tavaya alınır iyice ısıtılır.</li>
+                          <li>Isınan yağa tavuklar konulur ve tavuklar güzelce kızarıncaya kadar pişirilir. Yaklaşık 10-15 dakika sürüyor. Bu süreçte sürekli tavuklara bakmak lazım, tavuğun, çıtır olması gerekiyor.</li>
+                          <li>Ayrı bir kapta soya sosu, ketçap, bal, sarımsak, susam iyice çırpılır.</li>
+                          <li>Çırpılan soya soslu karışım tavuklar kızarmaya başlayınca tavaya alınır ve 4-5 dakika da bu şekilde pişirilir.Çok lezzetli bir tarif deneceklere şimdiden afiyet olsun, biz bayıldık bu tarife.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Burritos
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <img src="https://cdn.britannica.com/13/234013-050-73781543/rice-and-chorizo-burrito.jpg" width="1000px" alt="burrito">
+                        <hr>
+                        <strong>Burritos Tarifi İçin Malzemeler</strong>
+                        <ul>
+                          <li>500g kıyma</li>
+                          <li>2 adet soğan</li>
+                          <li>2- adet domates</li>
+                          <li>1 tutam maydanoz</li>
+                          <li>1 çay bardağı sıvıyağ</li>
+                          <li>Birer adet sarı, kırmızı renkli paprika</li>
+                          <li>1 yemek kaşığı salça</li>
+                          <li>Tuz,karabiber</li>
+                          <li>1, kase haşlanmış mısır taneleri</li>
+                          <li>1 kase haşlanmış kırmızı fasülye</li>
+                          <li>Doğranmış marul</li>
+                          <li>1 kase yoğurt</li>
+                        </ul>
+                        <hr>
+                        <strong>Burritos Tarifi Yapılışı</strong>
+                        <ol>
+                          <li>Tavamıza sıvı yağı koyuyoruz, soğanları doğrayıp kavurmaya başlıyoruz, kıymayı ilave edip tekrar karıştırıyoruz.</li>
+                          <li>Renkli biberleri ilave ediyoruz karıştırıyoruz, salçasını, baharatlarını koyuyoruz, domatesleri ve maydanozu doğruyoruz ilave ediyoruz tekrar karıştırıyoruz.</li>
+                          <li>Mısır ve fasulyeyi ilave edip karıştırıp kapatıyoruz.</li>
+                          <li>Bir kase yoğurdun içine tuz, karabiber koyup karıştırıyoruz.</li>
+                          <li>Marulları ince doğruyoruz tortilla ekmeklerini alıp içine önce bir tatlı kaşığı yoğurt koyuyoruz.</li>
+                          <li>Üzerine kıymalı harcı ilave ediyoruz, marulda ekleyip külah şeklinde kapatıyoruz.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Lazanya
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <img src="https://iasbh.tmgrup.com.tr/73d395/752/395/0/145/1258/807?u=https://isbh.tmgrup.com.tr/sbh/2020/10/05/lazanya-tarifi-evde-lazanya-nasil-yapilir-hamuru-yapimi-icin-gerekli-malzemeler-1601887140773.jpg" alt="lazanya">
+                        <hr>
+                        <strong>Lazanya Tarifi İçin Malzemeler</strong>
+                        <p>İç harcı için;</p>
+                        <ul>
+                          <li>400 gr kıyma</li>
+                          <li>3 yemek kaşığı sıvı yağ</li>
+                          <li>2 adet kuru soğan</li>
+                          <li>2 adet domates</li>
+                          <li>2 yemek kaşığı domates salçası</li>
+                          <li>2 diş sarımsak</li>
+                          <li>1 tatlı kaşığı tuz</li>
+                          <li>1,5 su bardağı sıcak su (300 ml)</li>
+                        </ul>
+                        <p>Beşamel sosu için;</p>
+                        <ul>
+                          <li>2 yemek kaşığı tereyağı</li>
+                          <li>3 su bardağı süt (600 ml)</li>
+                          <li>Yarım su bardağı un</li>
+                          <li>1 çay kaşığı tuz</li>
+                          <li>Yarım çay kaşığı karabiber</li>
+                        </ul>
+                        <p>Üzeri için;</p>
+                        <ul>
+                          <li>1 su bardağı kaşar peyniri rendesi</li>
+                        </ul>
+                        <hr>
+                        <strong>Lazanya Tarifi Yapılışı</strong>
+                        <ol>
+                          <li>İç harcı için geniş bir tavaya sıvı yağı alalım. Küçük küçük doğradığımız soğanları ilave edelim, biraz kavurduktan sonra üzerine kıymayı ilave ederek kavurmaya devam edelim.</li>
+                          <li>Kıymalar yeterince kavrulunca doğradığımız sarımsakları ve kabuğunu soyup doğradığımız domatesleri de ilave edelim ve orta ateşte 5 dakika kadar daha soteleyelim.</li>
+                          <li>Üzerine salçayı ve tuzu ekleyerek kavuralım.</li>
+                          <li>Ardından suyunu ekleyelim ve iç harcımız suyunu çekene kadar kısık ateşte pişmeye bırakalım.</li>
+                          <li>Beşamel sosu için tereyağı ve unu küçük bir tencereye alalım ve orta ateşte kavurun.</li>
+                          <li>Üzerine sütü azar azar ekleyelim ve topaklanmaması için sürekli çırparak karıştıralım.</li>
+                          <li>Kaynamaya başlayınca tuz ve karabiberi ekleyelim. Muhallebi kıvamına gelince ocaktan alalım.</li>
+                          <li>Kıymalı sos ve beşamel sos hazırlandıktan sonra ısıya dayanıklı bir fırın kabına önce biraz iç harçtan yayalım.</li>
+                          <li>Üzerine çok az beşamel sostan gezdirdikten sonra lazanyaları dizelim.</li>
+                          <li>Lazanyaların üzerine biraz kıymalı iç harç ve ardından beşamel sos dökerek güzelce yayalım.</li>
+                          <li>Üzerine tekrar lazanya yapraklarından yerleştirelim ve tekrar iç hraç ve beşamel sostan gezdirelim. Bu işlemi malzemeleriniz bitene kadar devam ettirelim.</li>
+                          <li>En üstteki lazanyalara tekrar iç harç ve beşamel sos dökelim ve kaşar peyniri rendesi serpelim.</li>
+                          <li>Lazanyalarımızı önceden ısıtılmış 190 derece fırında yaklaşık 20-25 dakika pişirelim.</li>
+                          <li>Üzeri tamamen kızarınca fırından alalım ve 15 dakika kadar dinlendirelim.</li>
+                          <li>Ardından lazanyamızı dilimleyerek servis edelim. Afiyet olsun.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Yöresel Yemekler
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Yöresel mutfak; yöreye has olan ürünlerle yerel adetlerin birleştirilmesi neticesi meydana gelen, yöre halkı tarafından kendine has yöntemlerle pişirilerek sunumu yapılan ve dini veya milli duygular ile tasarımı yapılan yiyecek - içeceklerin tamamı olarak tanımlanabilmektedir</div>
+            <!-- Yöresel Yemek Tarifleri -->
+            <div class="container">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Ankara Tava
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <img src="https://i.lezzet.com.tr/images-xxlarge-recipe/ankara_tava-24f27687-6bb7-4320-9824-3db9e1d0fdf3.jpg" alt="ankara-tava">
+                      <hr>
+                      <strong>Ankara Tava İçin Malzemeler</strong>
+                      <ul>
+                        <li>1, 5 bardak arpa şehriye</li>
+                        <li>300-400 gr iri doğranmış kuşbaşı et</li>
+                        <li>1 adet biber</li>
+                        <li>1 adet domates</li>
+                        <li>1 adet soğan</li>
+                        <li>1 diş sarmısak</li>
+                        <li>1 tatlı kaşığı domates biber salçası</li>
+                        <li>1 dolu kaşık tereyağ</li>
+                        <li>2-3 kaşık zeytinyağ</li>
+                        <li>Tuz ,karabiber ,pul biber</li>
+                        <li>Haşladığımız etin suyu</li>
+                      </ul>
+                      <hr>
+                      <strong>Ankara Tava Yapılışı</strong>
+                      <ol>
+                        <li>Eti tencereye alıp su ekleyelim bir iki taşım kaynayınca köpüklü suyu dökelim ve tekrar üzerine 3 bardak su ekleyip haşlayalım.</li>
+                        <li>Pişen etin suyunu süzüp kenara alalım.</li>
+                        <li>Tencereye tereyağını alıp etleri ilave edip biraz kavuralım.</li>
+                        <li>Yemeklik doğradığımız soğanı ezilmiş sarımsağı ekleyelim.</li>
+                        <li>Yine yemeklik doğradığımız biber ve domatesi ekleyip biraz kavurup salçayı ekleyip kokusu çıkınca ocaktan alalım.</li>
+                        <li>Pilav tenceresine zeytinyağını alalım arpa şehriyeyi ekleyip rengi hafif dönene kadar kavuralım.</li>
+                        <li>Arpa şehriyeye kavurduğumuz etli harcı ilave edip üzerini geçecek kadar et suyundan döküp tuzunu atıp pişmeye bırakalım.</li>
+                        <li>Pişen yemeğimize ocaktan almadan baharatları ekleyip karıştıralım ve dinlendirelim. Orjinalinde kuzu etiyle yapılan yemeğimizi ben dana etiyle yaptım ve eti düdüklüde haşladım. Afiyet olsun.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Keşkek
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <img src="https://d17wu0fn6x6rgz.cloudfront.net/img/w/tarif/mgt/kesgkek_8-367.webp" alt="keşkek">
+                      <hr>
+                      <strong>Keşkek Tarifi İçin Malzemeler</strong>
+                      <ul>
+                        <li>1 kg aşurelik bütün buğday</li>
+                        <li>1 su bardağı nohut</li>
+                        <li>800 gram et (tavuk eti koyarsanız 3 adet but)</li>
+                        <li>Tuz</li>
+                      </ul>
+                      <p>Sosu için;</p>
+                      <ul>
+                        <li>Tereyağı</li>
+                        <li>Salça</li>
+                      </ul>
+                      <hr>
+                      <strong>Keşkek Tarifi Yapılışı</strong>
+                      <ol>
+                        <li>Çömleğin en altına eti yerleştirin.</li>
+                        <li>Üzerine yıkamış olduğunuz nohut, buğdayı ve 1 çorba kaşığı tuzu ekleyin.</li>
+                        <li>Hazırladığımız malzemenin üzerini 10-15 cm geçecek kadar suyu ekleyin.</li>
+                        <li>Çömleği odun fırınına (ekmek fırını) akşamdan koyulur ve sabaha kadar fırında bekletilir.</li>
+                        <li>Fırından alınan keşkek büyük tahta kaşık yardımı ile iyice ezilir (tavuk koymuşsanız kemiklerini almayı unutmayın)</li>
+                        <li>Tabaklara alındıktan sonra üzerine salçalı sos dökülerek servis yapılır. (Aynı şekilde düdüklü tencerede de yapabilirsiniz kısık ateşte 2 saatte pişer)</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Perde Pilavı
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <img src="https://www.siirt.bel.tr/kurumlar/siirt.bel.tr/yemeklerimiz/perde1.jpg" alt="perde-pilavı">
+                      <hr>
+                      <strong>Perde Pilavı Tarifi İçin Malzemeler</strong>
+                      <p>İç harcı için;</p>
+                      <ul>
+                        <li>3 su bardağı pirinç</li>
+                        <li>2 yemek kaşığı tereyağı</li>
+                        <li>4.5 su bardağı su ve tavuk suyu karışımı</li>
+                        <li>2 adet tavuk budu</li>
+                        <li>Yarım kahve fincanı kuş üzümü</li>
+                        <li>200 g çiğ badem</li>
+                        <li>1 kahve fincanı dolmalık fıstık</li>
+                        <li>Karabiber, tuz</li>
+                      </ul>
+                      <p>Hamuru için;</p>
+                      <ul>
+                        <li>2 adet yumurta</li>
+                        <li>4 yemek kaşığı yoğurt</li>
+                        <li>Yarım su bardağı zeytinyağı</li>
+                        <li>Tuz</li>
+                        <li>Aldığı kadar un</li>
+                      </ul>
+                      <hr>
+                      <strong>Perde Pilavı Tarifi Yapılışı</strong>
+                      <ol>
+                        <li>Perde pilavı yapımına ilk olarak tavuk butlarının haşlanması ile başladım. Tavukları haşladıktan sonra tavuk suyu ile pilavın yapımına başladım.</li>
+                        <li>Tereyağını pilav tenceresinde eritin ve yıkayıp suyunu iyice süzdüğünün pirinçleri yağda 3-4 dakika kadar kavurun.</li>
+                        <li>Haşladığımız tavukların suyundan 2 kasesini pirinçlerin üzerine ekleyin.</li>
+                        <li>Yarım yemek kaşığı da tuz ekleyerek kapağını kapatın.</li>
+                        <li>Pilav tam olarak pişmeden, hala diriyken ocaktan alın.</li>
+                        <li>Didiklediğiniz tavukları, kuş üzümünü ve karabiberi pilav ile iyice harmanlayın.</li>
+                        <li>Hamurun yapımı: tüm malzemeleri karıştırarak hamurunuzu yoğurun.</li>
+                        <li>Hamuru biri küçük biri büyük iki parçaya ayırın.</li>
+                        <li>Büyük olanı 3 mm kalınlığında açıp kabın tabanına, kenarları da kapatacak şekilde güzelce yerleştirin.</li>
+                        <li>İçine pilavı boşaltın.</li>
+                        <li>Hamurun küçük parçasını da aynı şekilde açıp pilavın üzerine kapatın.</li>
+                        <li>200 derece ısıtılmış fırında perde pilavını kızarana kadar pişirin. Ters çevirip servis yapın.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Tatlılar
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            <!-- Tatlı Tarifleri -->
+            <div class="container">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Fırında Sütlaç
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <img src="https://cdn.ye-mek.net/App_UI/Img/out/650/2022/05/firin-sutlac-resimli-yemek-tarifi(15).jpg" alt="sütlaç">
+                      <hr>
+                      <strong>Fırında Sütlaç İçin Malzemeler</strong>
+                      <ul>
+                        <li>1 litre süt</li>
+                        <li>1 su bardağı şeker</li>
+                        <li>Yarım su bardağı pirinç</li>
+                        <li>3 yemek kaşığı buğday nişastası</li>
+                        <li>1 paket vanilya</li>
+                        <li>2 su bardağı su</li>
+                        <li>Yarım su bardağı süt (nişastayı açmak için)</li>
+                      <hr>
+                      <strong>Fırında Sütlaç Yapılışı</strong>
+                      <ol>
+                        <li>Fırında sütlaç için öncelikle pirinci haşlayalım. Pirinçleri güzelce yıkadıktan sonra 2 su bardağı su ile pirinçler yumuşayıp pişene kadar haşlayın. Çok az sulu kalacaktır.</li>
+                        <li>Diğer malzemeleri ekleyelim ve sütlacı pişirelim. Haşlanan pirinçlerin üzerine sütü, vanilyayı ilave edip kaynatın.</li>
+                        <li>Bu arada bir kap içerisinde nişasta ve suyu pürüzsüz kıvam alıncaya kadar karıştırın.</li>
+                        <li>Karışım kaynamaya başlayınca şekeri ve yarım su bardağı sütle karıştırdığınız 3 yemek kaşığı buğday nişastasını ilave ediniz. 10-15 dk. daha kaynatıp ocağın altını kapatın.</li>
+                        <li>Sütlaçları fırına sürelim. Fırın için uygun ısıya dayanıklı sütlaç kaselerine sütlaçlarınızı paylaştırın.</li>
+                        <li>Tepsinize soğuk su doldurun ve sütlaç kaplarını fırın tepsinize dizin (Tepsideki su sütlaç kaplarının yarısına kadar gelecek)</li>
+                        <li>Tepsiyi fırınınızın en üst rafına yerleştirin.</li>
+                        <li>180 derecede, sütlaçlarınız kızarana kadar fırınlayın. Afiyet olsun.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Lotuslu Magnolia
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <img src="https://cdn.ye-mek.net/App_UI/Img/out/650/2021/10/lotuslu-magnolia-resimli-yemek-tarifi(15).jpg" alt="lotuslu">
+                      <hr>
+                      <strong>Lotuslu Magnolia İçin Malzemeler</strong>
+                      <ul>
+                        <li>500 ml süt</li>
+                        <li>2 yumurta sarısı</li>
+                        <li>1,5 yemek kaşığı nişasta</li>
+                        <li>1,5 yemek kaşığı un</li>
+                        <li>Yarım su bardağı şeker</li>
+                        <li>1 yemek kaşığı tereyağ</li>
+                        <li>1 paket vanilya</li>
+                        <li>100 ml sıvı krema</li>
+                      </ul>
+                      <p>Alt tabanı için;</p>
+                      <ul>
+                        <li>7,8 adet lotus kırığı</li>
+                      </ul>
+                      <p>Üzeri için;</p>
+                      <ul>
+                        <li>3,4 yemek kaşığı lotus kreması</li>
+                        <li>4,5 adet beyaz çikolata</li>
+                      </ul>
+                      <hr>
+                      <strong>Lotuslu Magnolia Yapılışı</strong>
+                      <ol>
+                        <li>Muhallebisi için tereyağ,krema ve vanilya hariç tüm malzemeler ile karıştırıp göz göz oluncaya kadar pişiriyoruz.</li>
+                        <li>Ocaktan aldıktan sonra kalan malzemeleri ekleyip karıştırıyoruz.</li>
+                        <li>Lotus kırıklarını kasenin dibine paylaştırıp üzerine muhallebiyi ekliyoruz.</li>
+                        <li>Üzeri için beyaz çikolatayı benmari usülü eritip lotus kreması ekleyip hepsini güzelce karıştırıp muhallebinin üzerine döküyoruz.</li>
+                        <li>Dilediğiniz gibi süsleyip servis ediyoruz afiyet şeker olsun.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Profiterol
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <img src="https://cdn.yemek.com/mnresize/940/940/uploads/2014/11/profiterol-yemekcom2.jpg" alt="profiterol">
+                      <hr>
+                      <strong>Profiterol İçin Malzemeler</strong>
+                      <ul>
+                        <li>1 su bardağı su</li>
+                        <li>1 su bardağı un</li>
+                        <li>125 gr tereyağı veya margarin</li>
+                        <li>3 adet yumurta (yumurtalar küçük ise 4 adet)</li>
+                      </ul>
+                      <p>Profiterol Kreması için;</p>
+                      <ul>
+                        <li>2,5 su bardağı süt</li>
+                        <li>3 yemek kaşığı un</li>
+                        <li>1,5 çay bardağı şeker</li>
+                        <li>1 adet yumurta</li>
+                        <li>1 paket vanilya</li>
+                      </ul>
+                      <p>Üzeri için;</p>
+                      <ul>
+                        <li>1 paket hazır çikolata sosu ya da benmari usulü eritilmiş 80 gr bitter çikolata</li>
+                      </ul>
+                      <hr>
+                      <strong>Profiterol Yapılışı</strong>
+                      <ol>
+                        <li>İlk olarak profiterolün hamurunu hazırlayalım. Küçük bir tencereye 1 su bardağı suyu ve margarini koyarak kaynatın.</li>
+                        <li>Daha sonra 1 su bardağı unu ekleyerek iyice karıştırın. 2-3 dakika karışımı sürekli karıştırarak pişirin.</li>
+                        <li>Ocağı kapatarak 10-15 dakika hamurun soğumasını bekleyin. Hamur biraz dinlendikten sonra 3 adet yumurtayı hamura yedirmemiz gerekiyor ancak bu noktada önemli bir ayrıntı var. Yumurtaları teker teker hamura kırın ve birini iyice yedirmeden diğer yumurtayı kırmayın. Yumurtaları hamura iyice yedirdikten sonra yapışkan bir hamur elde etmiş olduk. Bu kısım biraz yorucu oluyor ama hamurun kabarması için iyice karıştırmış olmanız gerekiyor. Yumurtaları yedirdikten sonra hamuru 10 dakika dinlendirin.</li>
+                        <li>Hamurlarımızı pişirelim. Yağlanmış tepsiye, kaşık yardımı ile hamurdan ceviz büyüklüğünde parçalar alarak aralarında 2-3 cm boşluk bulunmasına dikkat ederek resimdeki gibi dökün. Elinizle şekillendirmeye çalışmayın.</li>
+                        <li>Daha önceden 180 derecede ısıttığımız fırına hamuru sürün. üzeri kızarana kadar yaklaşık 40 dakika pişiriyorsunuz.</li>
+                        <li>Profiterol Kremasını hazırlayalım. Hamurlar piştikten sonra kremasını hazırlayın. Vanilya hariç diğer malzemeleri bir tencereye koyarak kremayı pişirin.</li>
+                        <li>Kremayı ocaktan aldıktan sonra vanilyasını ekleyerek karıştırın.</li>
+                        <li>Kremayı profiterol hamurlarına dolduralım. Profiterolün  pişen hamurlarını ikiye bölerek ya da varsa krema sıkma torbası ile içlerini krema ile doldurun ve tepsiye dizin.</li>
+                        <li>Tatlımızın üzerine çikolata sosu gezdirelim. Tüm profiterolleri doldurduktan sonra üzerine çikolata sosunu ya da benmari usulü erittiğiniz çikolatayı gezdirin.</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- FOOTER ALANI -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
